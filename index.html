@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Food Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.goomenus2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+<div class="contain">
+  <div class="header">
+<a><img src="menu.png" alt="icon" class="menuicon" onclick="togglemenu()"></a>
+      <h1>Lorem <br>ipsum</h1>
+<a><img src="cart.png" alt="icon" class="carticon"></a>
+
+  </div>
+</div>
+
+
+
+    <nav class="sidemenu">
+<ul id="menuList">
+      <li>
+        <a href="#">About</a>
+      </li>
+
+      <li>
+        <a href="#">Services</a>
+      </li>
+
+      <li>
+        <a href="#">Cuisine</a>
+      </li>
+
+      <li>
+        <a href="#">Gallery</a>
+      </li>
+
+      <li>
+        <a href="#">Contact</a>
+      </li>
+
+      <li>
+        <a href="#">Book</a>
+      </li>
+</ul>
+
+<a id="carti"class="cart" href="#">Cart</a>
+  </nav>
+
+
+    <div class="maincontent">
+    <div class="bighead">
+      <div class="innerhead">
+        <h1>What are you having for Lunch?</h1>
+        </div>
+        <div class="sidecontent">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </div>
+    </div>
+
+
+
+      <div class="container">
+
+    <div class="items">
+      <a href="#">
+    <img class="thumbnail"src="mexicantaco.jpg" alt="Mexican Taco">
+    <div class="caption">
+      <h2>Mexican Taco</h2>
+    </div>
+      </a>
+    </div>
+
+    <div class="items">
+      <a href="#">
+    <img class="thumbnail"src="farmhousepizza.jpg" alt="Farmhouse Pizza">
+    <div class="caption">
+      <h2>Farmhouse Pizza</h2>
+    </div>
+      </a>
+    </div>
+
+    <div class="items">
+      <a href="#">
+    <img class="thumbnail"src="chickenburger.jpg" alt="Chicken Burger">
+    <div class="caption">
+      <h2>Chicken Burger</h2>
+    </div>
+      </a>
+    </div>
+
+    <div class="items">
+      <a href="#">
+    <img class="thumbnail"src="loadednachos.jpg" alt="Loaded Nachos">
+    <div class="caption">
+      <h2>Loaded Nachos</h2>
+    </div>
+      </a>
+    </div>
+
+    <div class="items">
+      <a href="#">
+    <img class="thumbnail"src="hakkanoodles.jpg" alt="Hakka Noodles">
+    <div class="caption">
+      <h2>Hakka Noodles</h2>
+    </div>
+      </a>
+    </div>
+
+      </div>
+
+    </div>
+<script>
+  var menuList = document.getElementById("menuList");
+  menuList.style.maxHeight = "0px";
+  function togglemenu() {
+    if (menuList.style.maxHeight == "0px")
+       {
+         menuList.style.maxHeight = "390px";
+         document.getElementById("menuList").style.display = "block ";
+
+        }
+     else {
+            menuList.style.maxHeight = "0px";
+            document.getElementById("menuList").style.display = "none";
+          }
+
+   }
+</script>
+  </body>
+</html>
